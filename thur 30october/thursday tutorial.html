@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML,CSS overview">
+    <meta name="description" content="This overview was done of 28th of october to showcase that the css styling of a page. read to understand">
+    <title>Thursday lesson</title>
+    <link rel="stylesheet" href="styles.css" >
+    <link rel="icon" href="thursday.png" type="image/x-icon">
+</head>
+<body>
+     <nav>
+        <!-- logo -->
+         <img src="thursday.png" alt="calendar of october"  width="100" height="auto">
+
+         <!-- routes to the previous lessons -->
+          <ul>
+            <li><h6><a href="../monday 3rd november/index.html" target="_blank">MONDAY</a></h6></li>
+            <li><h6><a href="../tue28october/tuesday zoom intake lesson.html" target="_blank">TUESDAY</a></h6></li>
+            <li><h6><a href="../wed29october/wednesday tutorial.HTML" target="_blank">WEDNESDAY</a></h6></li>
+            <li><h6><a href="../thur 30october/thursday tutorial.html" target="_blank">THURSDAY</a></h6></li>
+            <li><h6><a href="../fri 31october/31frioctober.html" target="_blank">FRIDAY</a></h6></li>
+          </ul>
+    </nav>
+    <h1>Meta lesson by jay</h1>
+    <h2>welcome to the lesson</h2>
+    <p>It is important to put the style sheet at the bottom of the html right above the body closing tag</p>
+    <p>This is because tehy tend to make the page to load more than usual. hence to prevent this ensure that the tag is below
+        to make the wabe page to open faster.
+    </p>
+    <p>The head part of a table is written as thead meaning table head. while the interior attribute will be <th class=""></th></p>
+    <br>
+    <!-- forms -->
+    <h2>Lets see about the forms</h2>
+    <p>HTML as we know it is used to enter data but can not operate on any logic .</p>
+    <p>This brings about the aspect of the form part. The form is used for example in sending messages,
+        inputing the names required to be sent out or even sending the mail to someone else
+    </p>
+    <p>The format of this is form action="" method="post"</p>
+    <p>The action can be for example (send_email.php)</p>
+    <p>Nexts lets see the types of inputs</p>
+    <p>inputs are broken down to inputs and the labels itself. After the inpts button we are going to see the
+        submit button. 
+    </p>
+    <p>Example
+        (label for="firstname")label is the tag for is the tag attribute.
+    </p>
+    <p>(input type="text"  (value)(name)="firstname" placeholder)  it can be the name or the value</p>
+    <p>In label for and the name you can input what you want to create the label for. It can include age date of birth,names etc.</p>
+    <p>The place holder gives a hint of some sort.</p>
+    <p>the input type now varies. it can be a text, dob, number, textbox etc</p>
+    <p>practicle example is what is observed below</p>
+    
+    <form action="send_email.php">
+        <h3>please fill the form</h3>
+        <label for="firstname"> First name:</label>
+        <input type="text"  name="firstname" placeholder="your name">
+        <br>
+        <label for="secondname"> Second name:</label>
+        <input type="text"  name="secondname" placeholder="your name">
+        <br>
+        <label for="age"> Age:</label>
+        <input type="number"  name="Age" placeholder="your age number">
+        <br>
+        <label for="dob"> Date Of Birth:</label>
+        <input type="date"  name="dob" placeholder="your date of birth">
+        <br>
+        <label for="gender"> Gender</label>
+        <p>In this part instead of writting we use the select. Then you input in the options</p>
+        <select name="gender" >
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="Binary">Binary</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+        </select>
+        <br>
+        <label for="email"> Email:</label>
+        <input type="email"  name="email" placeholder="example@gmail.com">
+        <br><label for="message"> Message:</label>
+        <textarea name="message" placeholder="messsage"></textarea>
+        <!-- button -->
+         <input type="button" value="submit">
+         <p>or</p>
+         <button type="submit"> submit message</button>
+         <p>The first button is commonly used the second if there isnt any page its going to bring back an error.</p>
+    
+    </form>
+        <!-- lottie animation -->
+        <p>Next is the lottie animation</p>
+        <p>We need an interpreter for lottie animation. This is because it is input in such a state that 
+            it looks like a gif.
+        </p>
+        <p>So this means we use a library for this. The specific library can be found here:
+            <br>
+        <a style=text-decoration:none; href="https://airbnb.io/lottie/#/web" >Lottie animation: https://airbnb.io/lottie/#/web</a> </p>
+
+        <h1>css</h1>
+        <p>In css we have the selector, the property and the value of the property.</p>
+        <p>the property and the value are the declaration and put in calibraces</p>
+        
+        
+        <ol>Type of selectors
+            <li> Element Selector -> eg p{}</li>
+            <li>ID selector -> #homeImage{}</li>
+            <li>Class Selector -> .homePage{}</li>
+            <li>Pseudo class selector -> a:hover{}</li>
+            <li>Attribute selector -> a[href=”https://example.com”]{}</li>
+        </ol>
+        <p>Note:  you can select more than one element, eg p, h1, h2{}</p>
+        <ol>
+            Pseudo class selector -> a:hover{}
+            <li>a:link - a normal, unvisited link</li>
+            <li>a:visited - a link the user has visited</li>
+            <li>a:hover - a link when the user mouses over it</li>
+            <li>a:active - a link the moment it is clicked </li>
+            
+        </ol>
+
+        
+    </body>
+</html>

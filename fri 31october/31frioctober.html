@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="HTML,CSS overview">
+        <meta name="description" content="This overview was done of 28th of october to showcase that the css styling of a page. read to understand">
+        <title>Friday lesson</title>
+        <link rel="stylesheet" href="styles.css" >
+        <link rel="icon" href="friday.jpeg" type="image/x-icon">
+    </head>
+    <body>
+         <nav>
+        <!-- logo -->
+         <img src="friday.jpeg" alt="calendar of october">
+
+         <!-- routes to the previous lessons -->
+          <ul>
+            <li><h6><a href="../monday 3rd november/index.html" target="_blank">MONDAY</a></h6></li>
+            <li><h6><a href="../tue28october/tuesday zoom intake lesson.html" target="_blank">TUESDAY</a></h6></li>
+            <li><h6><a href="../wed29october/wednesday tutorial.HTML" target="_blank">WEDNESDAY</a></h6></li>
+            <li><h6><a href="../thur 30october/thursday tutorial.html" target="_blank">THURSDAY</a></h6></li>
+            <li><h6><a href="../fri 31october/31frioctober.html" target="_blank">FRIDAY</a></h6></li>
+          </ul>
+    </nav>
+        <h1>css discussions</h1>
+        <p>Todays starting discussions is the nesting of html and css</p>
+        <p>For example in lists one nests a list wihtin a ul</p>
+        <p>In CSS this is written like this ul>li to showcase that the unordered list below has
+            been placed within the list.
+        </p>
+        <p>Next we see the box model</p>
+        <p>We have the margin then, the border, then the padding , then the text.</p>
+        <p>Example</p>
+        <br><br>
+        <p class="look"> LOOK AT ME AND MY LAYERS</p>
+        <br>
+        <h2>pseudo selectors</h2>
+        <p>After seeing the types of selectors, lets look at the types of pseudo selectors.</p>
+        <ol style="list-style-type:none">
+            <li>a:link - a normal, unvisited link</li>
+            <li> a:visited - a link the user has visited</li>
+            <li> a:hover - a link when the user mouses over it</li>
+            <li>a:active - a link the moment it is clicked</li>
+        </ol>
+        <h2>flex</h2>
+        <p>You can make anything use the flex display approach: 
+            <ul style="list-style-type:none">
+                <li>display:flex;</li>
+                <li>flex-direction: -> defines row(default) or column</li>
+                <li>justify-content-> aligns items horizontally eg space between</li>
+                <li>align-items -> aligns items vertically eg center</li>
+            </ul>
+        </p>
+        <h2>grid</h2>
+        <p>You can make anything use the flex display approach: </p>
+            <p>Display:grid; // define the type of display</p>
+            <p>column-gap: -> defines column gap eg 50px</p>
+            <p>row-gap: -> defines row gap eg 50px</p>
+            <p>justify-content-> aligns items horizontally eg space between</p>
+            <p>align-items -> aligns items vertically eg cente</p>
+        </p>
+        <h2>media queries</h2>
+        <p>This ideally allows you to make your pages responsive or adapt to the device media type.
+             In this session, we focus on screen sizes. </p>
+            <p>I limits css styling to particular or based on particular rules</p>
+            <p>We can split the our rules based on 3 screens:</p> 
+            <ol>
+            <li>mobile</li>
+            <li>Tablets</li>
+            <li>Large screen</li>
+            </ol>
+        </p>
+        <p>Example</p>
+        <pre>the code
+            /* 📱 Phones (up to 600px) */
+            @media (max-width: 600px) {
+            body {
+                font-size: 14px;
+                background-color: lightgray;
+            }
+            }
+
+            /* 📟 Tablets (601px - 1024px) */
+            @media (min-width: 601px) and (max-width: 1024px) {
+            body {
+                font-size: 18px;
+                background-color: lightblue;
+            }
+            }
+
+            /* 💻 Laptops & Desktops (1025px and above) */
+            @media (min-width: 1025px) {
+            body {
+                font-size: 20px;
+                background-color: lightgreen;
+            }
+            }
+        </pre>
+        <h2>viewpoint</h2>
+        <p>We will add this to the header section of our html file:
+            meta name="viewport" content="width=device-width, initial-scale=1.0" /</p>
+
+            <p>Reason:</p> 
+            <p>Gives you the opportunity to control the pages dimensions ans scaling, initial-scale=1.0 sets the initial zoom level
+        </p>
+    </body>
+</html>

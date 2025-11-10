@@ -1,0 +1,28 @@
+:root{
+    --primary-color:#6C464F;
+    --secondary-color:#9E768F;
+    --auxillary-color:#9FA4C4;
+    --padding-horizontal:80px;
+    --font-family:"Poppins", sans-serif;
+nav{
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 20px var(--padding-horizontal);
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+nav>ul>li>h6>a{
+    text-decoration: none;
+    color:var(--auxillary-color);
+    padding-right:12px;
+}
+span {
+  background-color: #your-color-here;
+  padding:0 4px;            /* Optional: space around text */
+  border-radius:3px;        /* Optional: rounded corners */
+}
